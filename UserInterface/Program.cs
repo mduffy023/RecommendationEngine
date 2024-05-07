@@ -35,6 +35,12 @@ namespace front_end
             app.MapFallbackToPage("/_Host");
 
             app.Run();
+
+            builder.Services.AddScoped<YouTubeService>();
+            builder.Services.AddHttpClient<YouTubeService>(client =>
+            {
+                client.BaseAddress = new Uri("https://www.googleapis.com/");
+            });
         }
     }
 }

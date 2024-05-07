@@ -1,0 +1,21 @@
+﻿@page "/youtube"
+@inject YouTubeService YouTubeService
+
+<h1>Search YouTube Videos</h1>
+<input @bind="searchQuery" placeholder="Enter search term..." />
+<button @onclick="SearchVideos">Search</button>
+
+@if (!string.IsNullOrEmpty(videosJson))
+{
+    <pre>@videosJson</pre>
+}
+
+@code {
+    private string searchQuery;
+    private string videosJson;
+
+    private async Task SearchVideos()
+    {
+        videosJson = await YouTubeService.GetVideosAsync(searchQuery);
+    }
+}
