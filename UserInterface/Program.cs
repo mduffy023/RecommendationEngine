@@ -31,6 +31,7 @@ namespace front_end
 
             app.UseRouting();
 
+            EndPoints.TestEndPoint.Map(app);
             app.MapBlazorHub();
             app.MapFallbackToPage("/_Host");
 
