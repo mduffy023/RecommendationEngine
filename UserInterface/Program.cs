@@ -15,6 +15,11 @@ namespace front_end
             builder.Services.AddServerSideBlazor();
             builder.Services.AddSingleton<WeatherForecastService>();
             builder.Services.AddCors();
+            builder.Services.AddScoped<YouTubeService>();
+            builder.Services.AddHttpClient<YouTubeService>(client =>
+            {
+                client.BaseAddress = new Uri("https://www.googleapis.com/");
+            });
 
             var app = builder.Build();
 
@@ -45,13 +50,7 @@ namespace front_end
             app.MapBlazorHub();
             app.MapFallbackToPage("/_Host");
 
-            app.Run();
-
-            builder.Services.AddScoped<YouTubeService>();
-            builder.Services.AddHttpClient<YouTubeService>(client =>
-            {
-                client.BaseAddress = new Uri("https://www.googleapis.com/");
-            });
+            app.Run();         
         }
     }
 }
