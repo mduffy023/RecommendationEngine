@@ -14,6 +14,7 @@ namespace front_end
             builder.Services.AddRazorPages();
             builder.Services.AddServerSideBlazor();
             builder.Services.AddSingleton<WeatherForecastService>();
+            builder.Services.AddCors();
 
             var app = builder.Build();
 
@@ -24,6 +25,15 @@ namespace front_end
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+            app.UseCors(options =>
+            {
+                options.AllowAnyMethod()
+                            .AllowAnyOrigin()
+                            .AllowAnyHeader()
+                            .SetIsOriginAllowed(origin => true)
+                            .WithMethods("GET, PATCH, DELETE, PUT, POST, OPTIONS");
+            });
 
             app.UseHttpsRedirection();
 
