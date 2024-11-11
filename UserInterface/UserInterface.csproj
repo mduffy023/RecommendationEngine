@@ -7,4 +7,8 @@
     <RootNamespace>front_end</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RecommendationEngine\RecommendationEngine.csproj" />
+  </ItemGroup>
+
 </Project>
