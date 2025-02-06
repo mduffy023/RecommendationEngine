@@ -1,0 +1,6 @@
+var channelname = document.querySelector("#text > a").innerHTML
+var title = document.querySelector("#title > h1 > yt-formatted-string").innerHTML
+fetch("https://localhost:7098/yttrack/123?title="+title+"&channelname="+channelname);
+
+
+
