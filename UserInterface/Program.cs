@@ -14,6 +14,7 @@ namespace front_end
             builder.Services.AddRazorPages();
             builder.Services.AddServerSideBlazor();
             builder.Services.AddSingleton<WeatherForecastService>();
+            builder.Services.AddSingleton<DataService>();
             builder.Services.AddCors();
             builder.Services.AddScoped<YouTubeService>();
             builder.Services.AddHttpClient<YouTubeService>(client =>

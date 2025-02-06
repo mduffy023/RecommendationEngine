@@ -8,8 +8,10 @@ namespace front_end.EndPoints
 		public static void Map(WebApplication app)
 		{
 #pragma warning disable CS8632 // The annotation for nullable reference types should only be used in code within a '#nullable' annotations context.
-			app.MapGet("/yttrack/{id}", (DataService ds, string? id, string? title, string? channelname, int? nubmeroflikes, string? vidsrc) =>
+			app.MapGet("/yttrack/{id}", (string id, string? title, string? channelname, int? nubmeroflikes, string? vidsrc, DataService ds) =>
 			{
+
+
 				var newVideo = new Video();
 
 				newVideo.Title = title;
