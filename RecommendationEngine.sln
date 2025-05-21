@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecommendationEngine", "Rec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInterface", "UserInterface\UserInterface.csproj", "{D076B68E-71CB-4006-9C81-72D2148E805F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInterface2", "UserInterface2\UserInterface2.csproj", "{94200C6C-72A2-464A-BB46-7CDE44E049DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D076B68E-71CB-4006-9C81-72D2148E805F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D076B68E-71CB-4006-9C81-72D2148E805F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D076B68E-71CB-4006-9C81-72D2148E805F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94200C6C-72A2-464A-BB46-7CDE44E049DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94200C6C-72A2-464A-BB46-7CDE44E049DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94200C6C-72A2-464A-BB46-7CDE44E049DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94200C6C-72A2-464A-BB46-7CDE44E049DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
