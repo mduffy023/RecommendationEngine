@@ -1,6 +1,6 @@
 ﻿using RecommendationEngine;
 
-namespace front_end.Data
+namespace UserInterface.Data
 {
     /// <summary>
     /// Service for tracking video view history in-memory.

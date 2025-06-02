@@ -1,7 +1,7 @@
-﻿using front_end.Data;
+﻿using UserInterface.Data;
 using RecommendationEngine;
 
-namespace front_end.EndPoints
+namespace UserInterface.EndPoints
 {
 	public class TestEndPoint
 	{

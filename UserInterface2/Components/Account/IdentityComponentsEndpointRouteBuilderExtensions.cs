@@ -6,8 +6,8 @@ using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Primitives;
-using UserInterface2.Components.Account.Pages;
-using UserInterface2.Components.Account.Pages.Manage;
+using UserInterface.Components.Account.Pages;
+using UserInterface.Components.Account.Pages.Manage;
 using UserInterface2.Data;
 
 namespace Microsoft.AspNetCore.Routing
