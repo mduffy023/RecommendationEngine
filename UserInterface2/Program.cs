@@ -2,8 +2,8 @@ using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using UserInterface.Components;
-using UserInterface.Components.Account;
-using UserInterface.Data;
+using UserInterface2.Components.Account;
+using UserInterface2.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
